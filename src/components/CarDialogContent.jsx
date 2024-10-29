@@ -1,0 +1,69 @@
+import { TextField, DialogContent } from "@mui/material";
+
+export default function CarDialogContent({ car, handleChange }) {
+  return (
+    <DialogContent>
+      <TextField
+        autoFocus
+        required
+        name='brand'
+        label='Brand'
+        type='text'
+        fullWidth
+        variant='standard'
+        value={car.brand}
+        onChange={handleChange}
+      />
+      <TextField
+        required
+        name='model'
+        label='Model'
+        type='text'
+        fullWidth
+        variant='standard'
+        value={car.model}
+        onChange={handleChange}
+      />
+      <TextField
+        required
+        name='color'
+        label='Color'
+        type='text'
+        fullWidth
+        variant='standard'
+        value={car.color}
+        onChange={handleChange}
+      />
+      <TextField
+        required
+        name='fuel'
+        label='Fuel'
+        type='text'
+        fullWidth
+        variant='standard'
+        value={car.fuel}
+        onChange={handleChange}
+      />
+      <TextField
+        required
+        name='modelYear'
+        label='Model year'
+        type='text'
+        fullWidth
+        variant='standard'
+        value={car.modelYear}
+        onChange={handleChange}
+      />
+      <TextField
+        required
+        name='price'
+        label='Price'
+        type='text'
+        fullWidth
+        variant='standard'
+        value={car.price}
+        onChange={handleChange}
+      />
+    </DialogContent>
+  );
+}
